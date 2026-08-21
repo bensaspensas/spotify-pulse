@@ -1,0 +1,6 @@
+.Rhistory
+.RData
+.Rproj.user
+*.Rproj
+tests/testthat/_snaps/
+shinytest2-report/

@@ -1,0 +1,24 @@
+Package: spotifypulse
+Title: Spotify Pulse - Interactive Explorer of 30k+ Spotify Tracks
+Version: 1.0.0
+Authors@R: person("Benediktas", "Poviliunas", role = c("aut", "cre"),
+                  email = "benukomailas@gmail.com")
+Description: A production-style Shiny dashboard exploring the audio landscape
+    of 30,000+ Spotify tracks. Built with bslib, data.table, ggiraph, plotly
+    and DT; tested with testthat and shinytest2. This DESCRIPTION exists to
+    declare dependencies for CI and tooling - the repository is a Shiny app,
+    not an installable package.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports:
+    bslib (>= 0.6.0),
+    data.table (>= 1.14.0),
+    DT,
+    ggiraph,
+    ggplot2 (>= 3.4.0),
+    plotly,
+    shiny (>= 1.8.0)
+Suggests:
+    shinytest2,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3

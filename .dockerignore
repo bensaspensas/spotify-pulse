@@ -1,0 +1,9 @@
+.git
+.github
+tests
+data-raw
+man
+*.md
+.Rhistory
+.RData
+.Rproj.user
