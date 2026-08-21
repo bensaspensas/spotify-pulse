@@ -11,6 +11,11 @@ library(ggiraph)
 library(plotly)
 library(DT)
 
+# Shiny normally auto-sources R/ next to app.R, but some tooling (e.g.
+# shinytest2 when a DESCRIPTION file is present) disables autoloading, so
+# the helpers are sourced explicitly. Re-sourcing is idempotent.
+invisible(lapply(sort(list.files("R", full.names = TRUE)), source))
+
 songs <- load_songs()
 
 ui <- bslib::page_navbar(
